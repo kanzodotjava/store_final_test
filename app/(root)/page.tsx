@@ -1,4 +1,5 @@
-
+"use client";
+import Countdown from "@/components/Countdown";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
   Carousel,
@@ -9,7 +10,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <><div className="m-10 flex justify-center items-center">
+          <Countdown />
+        </div>
     <div className="m-10">
       <Carousel>
         <CarouselContent>

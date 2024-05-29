@@ -2,7 +2,6 @@ import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import Navbar from "@/components/Navbar";
 import ToasterProvider from "@/lib/providers/ToasterProvider";
 import "../globals.css";
 
@@ -23,7 +22,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <ClerkProvider>
           <ToasterProvider />
-          <Navbar />
           {children}
         </ClerkProvider>
       </body>
