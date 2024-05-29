@@ -1,12 +1,35 @@
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem
+} from "@/components/ui/carousel";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-    <div className="flex justify-center items-center">
-      <Image src="/banner.png" alt="banner" width={1080} height={720}  />
+    <div className="m-10">
+      <Carousel>
+        <CarouselContent>
+          <CarouselItem>
+            <div className="flex justify-center items-center">
+              <Image src="/banner.png" alt="banner" width={1080} height={720} />
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+          <div className="flex justify-center items-center">
+              <Image src="/logo.png" alt="banner" width={1080} height={720} />
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+          <div className="flex justify-center items-center">
+              <Image src="/banner.png" alt="banner" width={1080} height={720} />
+            </div>
+          </CarouselItem>
+        </CarouselContent>
+      </Carousel>
       </div>
       <div className="m-10 border-t-2 border-gray-300">
         <Accordion type="single" collapsible>
