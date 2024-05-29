@@ -26,12 +26,12 @@ const Navbar = () => {
 
       <div className="flex gap-4 text-base-bold max-lg:hidden">
         <Link
-          href="/"
+          href="/products"
           className={`hover:text-red-1 ${
-            pathname === "/" && "text-red-1"
+            pathname === "/products" && "text-red-1"
           }`}
         >
-          Home
+          Mousepads
         </Link>
         <Link
           href={user ? "/wishlist" : "/sign-in"}
@@ -82,8 +82,8 @@ const Navbar = () => {
 
         {dropdownMenu && (
           <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg border bg-white text-base-bold lg:hidden">
-            <Link href="/" className="hover:text-red-1">
-              Home
+            <Link href="/products" className="hover:text-red-1">
+              Mousepads
             </Link>
             <Link
               href={user ? "/wishlist" : "/sign-in"}

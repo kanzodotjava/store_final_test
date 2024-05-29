@@ -8,7 +8,6 @@ const Collections = async () => {
 
   return (
     <div className="flex flex-col items-center gap-10 py-8 px-5">
-      <p className="text-heading1-bold">Collections</p>
       {!collections || collections.length === 0 ? (
         <p className="text-body-bold">No collections found</p>
       ) : (
@@ -19,8 +18,8 @@ const Collections = async () => {
                 key={collection._id}
                 src={collection.image}
                 alt={collection.title}
-                width={350}
-                height={200}
+                width={150}
+                height={150}
                 className="rounded-lg cursor-pointer"
               />
             </Link>
